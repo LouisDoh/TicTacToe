@@ -16,7 +16,7 @@ jobs:
       - name: install dependencies
         run: npm install
       - name: install jest globally
-        run: npm install -g jest
+        run: sudo npm install -g jest
       - name: run tests
         run: npm run test
       - name: SonarCloud Scan
