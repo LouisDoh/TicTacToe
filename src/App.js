@@ -153,3 +153,6 @@ function calculateWinner(squares) {
   }
   return null;
 }
+
+// module.exports = calculateWinner;
+export {calculateWinner}

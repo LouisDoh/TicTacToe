@@ -5,15 +5,26 @@
     "react-scripts": "^5.0.0"
   },
   "main": "/index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/preset-env": "^7.23.6",
+    "@babel/preset-react": "^7.23.3",
+    "babel-jest": "^29.7.0",
+    "jest": "^27.5.1",
+    "jest-sonar-reporter": "^2.0.0",
+    "react-test-renderer": "^18.2.0"
+  },
   "name": "vy6j3f",
   "description": null,
   "version": "0.0.0",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "jest --coverage ./test",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "testResultsProcessor": "jest-sonar-reporter"
   },
   "browserslist": {
     "production": [
